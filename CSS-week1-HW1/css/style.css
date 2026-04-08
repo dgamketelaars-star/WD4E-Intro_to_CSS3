@@ -27,9 +27,12 @@ footer {
   padding: 15px;
 }
 
+ /*
 li {
   display: inline-block;
   width: 30%;
+}
+*/
 }
 
 h1 {
@@ -40,4 +43,59 @@ h1 {
 
 p {
   line-height: 1.6;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 10px;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 8px;
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  top: 10px;
+}
+
+/* Comment out the old li styling if it exists */
+/*
+li {
+  display: inline-block;
+  width: 30%;
+}
+*/
+
+/* Nav */
+nav {
+  display: inline-block;
+  width: 80%;
+}
+
+/* Only the image inside nav */
+nav img {
+  width: 10%;
+}
+
+/* Grid layout */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-between;
+  align-items: start;
+  row-gap: 20px;
+}
+
+/* Only images inside grid */
+.grid img {
+  width: 100%;
+}
+
+/* Flex layout */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
